@@ -2,8 +2,6 @@
 #include <math.h>
 #include <stdlib.h>
 
-const char consolidate_voxels = 0;
-
 int global_counter = 0;
 int global_nodes[100] = {0};
 int global_null_nodes[100] = {0};
