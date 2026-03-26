@@ -26,11 +26,11 @@ Contoh Objviewer: gcc -o Objviewer inputtest.c vertex.c face.c vertex_list.c fac
 1. Buka program
 2. Buka file .obj
 3. Navigasi dengan kontrol:
-  - x/z : +/- sudut x
-  - s/a : +/- sudut y
-  - w/q : +/- sudut z
+  - X/Z : +/- sudut x
+  - S/A : +/- sudut y
+  - W/Q : +/- sudut z
   - *Scrollwheel* : zoom
-  - Esc : keluar program
+  - ESC : keluar program
 
 ## Identitas
 
