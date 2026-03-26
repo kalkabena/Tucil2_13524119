@@ -4,6 +4,12 @@
 #include "face_list.h"
 #include <stdio.h>
 
+#ifdef CONSOLIDATE
+    const char consolidate_voxels = 1;
+#else
+    const char consolidate_voxels = 0;
+#endif
+
 // pointers(xyz) = 000 -> 100 -> 010 -> 110 -> 001 -> 101 -> 011 -> 111
 typedef struct vxl* voxel_address;
 typedef struct vxl {
