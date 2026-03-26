@@ -2,6 +2,8 @@
 #include <math.h>
 #include <stdlib.h>
 
+const char consolidate_voxels = 0;
+
 int global_counter = 0;
 int global_nodes[100] = {0};
 int global_null_nodes[100] = {0};
@@ -232,7 +234,7 @@ void voxellize(voxel *v, face_list fl, int max_depth) {
 			deallocate_face_list(&temp_list);
 		}
 		
-		v->filled = 1;
+		if (consolidate_voxels > 0) v->filled = 1;
 		for (int i = 0; i < 8; i++) {
 			if (v->pointers[i] == NULL) {
 				v->filled = 0;
